@@ -1,4 +1,4 @@
-## Задание на лабораторную работу
+﻿## Задание на лабораторную работу
 
 Требует создать программу для шифрования текста [шифром Цезаря](http://ru.wikipedia.org/wiki/%D0%A8%D0%B8%D1%84%D1%80_%D0%A6%D0%B5%D0%B7%D0%B0%D1%80%D1%8F). Текст может быть любым символом из стандартной таблицы ASCIII. Запуск программы осуществляется следующим образом:
 
@@ -6,7 +6,7 @@
 	
 	options:
 		-a, --alphabet=<alphabet>  alphabet — алфавит для работы алгоритма (по умолчанию 
-		                           содержит буквы из латниского алфавита и цифры: AaBbCc..Zz0..9)
+		                           содержит буквы из латинского алфавита и цифры: AaBbCc..Zz0..9)
 		-t, --type=<type>          type может быть 'encode' или 'decode', по умолчанию — encode		
 		-h, --help                 выводит эту справку
 		
@@ -23,7 +23,7 @@
 
 	$ crypt 5 my.txt
 	$ crypt -t decode 3 my.txt another.txt
-	$ crypt -type=encode 3 another.txt my.txt
+	$ crypt --type=encode 3 another.txt my.txt
 	$ crypt -a "AaBbCcDd0135" 8 "C:/Program Files/yes.txt" "C:/Program Files/no.txt"
 	$ crypt --help
 	
